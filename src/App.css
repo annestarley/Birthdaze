@@ -1,38 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Londrina+Outline&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Comfortaa', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: white;
+  border-radius: 5px;
+  border: black 1px solid;
+  font-family: 'Comfortaa', cursive;
+  padding: 5% 2%;
+  display: block;
+  margin: 2% auto;
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: black;
+  font-size: 0.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {font-family: 'Londrina Outline', cursive;}
+
+/* Login */
+.login h1, .login h2 {font-family: 'Londrina Outline', cursive;}
+
+.login h1 {font-size: 4rem; margin-bottom: 0}
+
+.login h2 {font-size: 2.5rem; margin-top: 0;}
+
+.login a:hover { color: grey;}
+
+/* Header */
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.header h1, .header a {
+  display: inline-block;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Homepage */

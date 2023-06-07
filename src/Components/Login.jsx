@@ -1,6 +1,6 @@
 import React, {Component, Fragment } from 'react';
 
-class MainGame extends Component {
+class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {}
@@ -22,4 +22,4 @@ class MainGame extends Component {
   }
 }
 
-export default MainGame;
+export default Login;
