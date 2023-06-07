@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Login from './Components/Login';
+import Birthdaze from './Components/Birthdaze';
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Birthdaze />
     </div>
   );
 }

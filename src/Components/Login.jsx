@@ -3,23 +3,20 @@ import React, {Component, Fragment } from 'react';
 class MainGame extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      views: {
-        login: true
-      }
-    }
-
-    this.setConsole = this.setConsole.bind(this);
+    this.state = {}
   }
 
-  setConsole (e) {
-    
-  }
 
   render() {
     return (
       <Fragment>
-        BIRTHDAZE
+        <div className='login' onClick={() => this.props.toHomepage()}>
+            <h1>BIRTHDAZE</h1>
+            <h2>AND OTHER EVENTS</h2>
+            <p>Your personalized greetings and gifts reminder app.</p>
+            <button>Login</button>
+            <a href='#'>Sign up</a>
+        </div>
       </Fragment>
     )
   }
