@@ -12,6 +12,17 @@ class Homepage extends Component {
             see: false
         }
     }
+
+    this.changeState = this.changeState.bind(this);
+  }
+
+  changeState (e) {
+    let newState  = this.state.dropdowns;
+    if (newState[e.target.className]) newState[e.target.className] = false;
+    else newState[e.target.className] = true;
+    this.setState({dropdowns: newState});
+
+    //e.target.className.current.scrollIntoView();
   }
 
   render() {
@@ -20,9 +31,9 @@ class Homepage extends Component {
         <Header />
         <div className='homepage'>
             <h3>Greetings! Would you like to...</h3>
-            <button>Add New Event</button>
+            <button className='add' onClick={((e) => this.changeState(e))}>Add New Event</button>
             {this.state.dropdowns.add ? <Add /> : ''}
-            <button>See Upcoming Events</button>
+            <button className='see' onClick={((e) => this.changeState(e))}>See Upcoming Events</button>
             {this.state.dropdowns.see ? <See /> : ''}
         </div>
       </Fragment>

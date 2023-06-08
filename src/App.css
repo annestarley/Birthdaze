@@ -14,6 +14,7 @@ button {
   display: block;
   margin: 2% auto;
   width: 200px;
+  text-align: center;
 }
 
 a {
@@ -44,3 +45,13 @@ h1 {font-family: 'Londrina Outline', cursive;}
 }
 
 /* Homepage */
+.add, .see { 
+  width: 200px;
+  margin: 2% auto;
+  font-size: 0.9rem;
+}
+
+.add-new, .add-to {
+  padding-left: 5%;
+  text-align: left;
+}
