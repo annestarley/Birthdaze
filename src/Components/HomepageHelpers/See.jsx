@@ -10,11 +10,10 @@ class See extends Component {
     return (
       <Fragment>
         <div className='see'>
-            <p id='christmas'>Christmas</p>
-            <p id='hannukah'>Hannukah</p>
-            <p id='mothers-day'>Mother's Day</p>
-            <p id='fathers-day'>Father's Day</p>
-            <p id='other'>Other</p>
+            <p id='today'>View today's events</p>
+            <p id='week'>View next week's events</p>
+            <p id='month'>View next month's events</p>
+            <p id='all'>View all events</p>
         </div>
       </Fragment>
     )

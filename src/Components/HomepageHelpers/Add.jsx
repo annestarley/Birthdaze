@@ -9,20 +9,20 @@ class Add extends Component {
   render() {
     return (
       <Fragment>
-        <div className='add'>
+        <div className='add' id='addEvent1'>
         <p className='title'>And new...</p>
-            <div className='add-new'>
-                <p id='birthday'>Birthday</p>
-                <p id='anniversary'>Anniversary</p>
-                <p id='other'>Other</p>
+            <div className='add-new' id='type'>
+                <p id='birthday' onClick={(e) => this.props.editEvent(e)}>Birthday</p>
+                <p id='anniversary' onClick={(e) => this.props.editEvent(e)}>Anniversary</p>
+                <p id='other' onClick={(e) => this.props.editEvent(e)}>Other</p>
             </div>
-            <p className='title'>Add to list...</p>
-            <div className='add-to'>
-                <p id='christmas'>Christmas</p>
-                <p id='hannukah'>Hannukah</p>
-                <p id='mothers-day'>Mother's Day</p>
-                <p id='fathers-day'>Father's Day</p>
-                <p id='other'>Other</p>
+            <p className='title' onClick={(e) => this.props.editEvent(e)}>Add to list...</p>
+            <div className='add-to' id='type'>
+                <p id='christmas' onClick={(e) => this.props.editEvent(e)}>Christmas</p>
+                <p id='hannukah' onClick={(e) => this.props.editEvent(e)}>Hannukah</p>
+                <p id='mothers-day' onClick={(e) => this.props.editEvent(e)}>Mother's Day</p>
+                <p id='fathers-day' onClick={(e) => this.props.editEvent(e)}>Father's Day</p>
+                <p id='otherList' onClick={(e) => this.props.editEvent(e)}>Other</p>
             </div>
         </div>
       </Fragment>
