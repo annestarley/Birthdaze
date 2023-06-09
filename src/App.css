@@ -24,7 +24,10 @@ a {
 
 h1 { font-family: 'Londrina Outline', cursive; }
 
-input { margin-left: 2%; }
+input { 
+  margin-left: 2%;
+  padding: 1%;
+ }
 
 /* Login */
 .login h1, .login h2 { font-family: 'Londrina Outline', cursive; }
@@ -58,12 +61,12 @@ input { margin-left: 2%; }
   text-align: left;
 }
 
-/* AddEvent1 */
+/* AddEvent */
 .back-next button {
   width: 20%;
 }
 
-.add-event-1 {
+.add-event-1, .add-event-2 {
   width: 80%;
   margin: 0 auto;
 }
