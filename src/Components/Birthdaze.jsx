@@ -2,6 +2,7 @@ import React, {Component, Fragment } from 'react';
 import Login from './Login';
 import Homepage from './Homepage';
 import AddEvent1 from './AddEvent1';
+import AddEvent2 from './AddEvent2';
 
 class MainGame extends Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class MainGame extends Component {
         views: {
             login: true,
             homepage: false,
-            addEvent1: false
+            addEvent1: false,
+            addEvent2: false
         },
         event: {
             type: null,
@@ -48,7 +50,7 @@ class MainGame extends Component {
 
   setView(e) {
     let newView = this.state.views;
-    let view = e.target.parentNode.parentNode.id
+    let view = e
     for (const v in newView) {
         if (newView[v]) newView[v] = false;
     }
@@ -64,15 +66,16 @@ class MainGame extends Component {
     newState[parent] = e.target.id
     this.setState({event: newState});
 
-    this.setView(e)
+    this.setView(e.target.parentNode.parentNode.id)
   }
 
   render() {
     return (
         <Fragment>
             {this.state.views.login ? <Login toHomepage={() =>this.toHomepage()}/> : ''}
-            {this.state.views.homepage ? <Homepage event={this.state.event} editEvent={(e) => this.editEvent(e)} /> : ''}
-            {this.state.views.addEvent1 ? <AddEvent1 event={this.state.event} /> : ''}
+            {this.state.views.homepage ? <Homepage event={this.state.event} editEvent={(e) => this.editEvent(e)} setView={(e) => this.setView(e)} /> : ''}
+            {this.state.views.addEvent1 ? <AddEvent1 event={this.state.event} setView={(e) => this.setView(e)} /> : ''}
+            {this.state.views.addEvent2 ? <AddEvent2 event={this.state.event} setView={(e) => this.setView(e)} /> : ''}
         </Fragment>
     )
   }

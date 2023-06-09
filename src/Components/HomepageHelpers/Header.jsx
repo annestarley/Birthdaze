@@ -11,7 +11,7 @@ class Header extends Component {
       <Fragment>
         <div className='header'>
             <h1>Birthdaze</h1>
-            <a href='#'>logout</a>
+            <a href='#' onClick={(e) => this.props.setView('login')}>logout</a>
         </div>
       </Fragment>
     )

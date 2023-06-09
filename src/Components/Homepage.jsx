@@ -28,7 +28,7 @@ class Homepage extends Component {
   render() {
     return (
       <Fragment>
-        <Header />
+        <Header setView={(e) => this.props.setView(e)} />
         <div className='homepage'>
             <h3>Greetings! Would you like to...</h3>
             <button className='add' onClick={((e) => this.dropdown(e))}>Add New Event</button>

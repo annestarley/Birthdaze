@@ -22,10 +22,12 @@ a {
   font-size: 0.8rem;
 }
 
-h1 {font-family: 'Londrina Outline', cursive;}
+h1 { font-family: 'Londrina Outline', cursive; }
+
+input { margin-left: 2%; }
 
 /* Login */
-.login h1, .login h2 {font-family: 'Londrina Outline', cursive;}
+.login h1, .login h2 { font-family: 'Londrina Outline', cursive; }
 
 .login h1 {font-size: 4rem; margin-bottom: 0}
 
@@ -34,7 +36,7 @@ h1 {font-family: 'Londrina Outline', cursive;}
 .login a:hover { color: grey;}
 
 /* Header */
-.header {
+.header, .back-next {
   display: flex;
   justify-content: space-around;
 }
@@ -53,5 +55,20 @@ h1 {font-family: 'Londrina Outline', cursive;}
 
 .add-new, .add-to, .see {
   padding-left: 5%;
+  text-align: left;
+}
+
+/* AddEvent1 */
+.back-next button {
+  width: 20%;
+}
+
+.add-event-1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.event-info {
+  margin-bottom: 8%;
   text-align: left;
 }
